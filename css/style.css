@@ -1,0 +1,179 @@
+/* 
+--шрифты не совсем получились 
+--px переведу в rem позже, когда все ошибки исправлю
+--кнопку Заказать ещё доделаю
+--
+*/
+@import "./null-style.css";
+@import "./normalize.css";
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: url("../fonts/AnyConv.com__Montserrat-Bold.eot");
+ 	src: local("O"), url("../fonts/Montserrat-Bold.woff") format("woff"), 
+			             url("../fonts/Montserrat-Bold.ttf") format("truetype"), 
+			             url("../fonts/Montserrat-Bold.svg") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: url("../fonts/Montserrat-Medium.eot");
+ 	src: local("O"), url("../fonts/Montserrat-Medium.woff") format("woff"), 
+			             url("../fonts/Montserrat-Medium.ttf") format("truetype"), 
+			             url("../fonts/Montserrat-Medium.svg") format("svg");
+	font-weight: medium;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: url("../fonts/AnyConv.com__Montserrat-Regular.eot");
+ 	src: local("O"), url("../fonts/Montserrat-Regular.woff") format("woff"), 
+			             url("../fonts/Montserrat-Regular.ttf") format("truetype"), 
+			             url("../fonts/Montserrat-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: url("../fonts/AnyConv.com__Montserrat-SemiBold.eot");
+ 	src: local("O"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), 
+		               url("../fonts/Montserrat-SemiBold.ttf") format("truetype"), 
+			             url("../fonts/Montserrat-SemiBold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src: url("../fonts/AnyConv.com__Montserrat-Thin.eot");
+ 	src: local("O"), url("../fonts/Montserrat-Thin.woff") format("woff"), 
+			             url("../fonts/Montserrat-Thin.ttf") format("truetype"), 
+			             url("../fonts/Montserrat-Thin.svg") format("svg");
+	font-weight: thin;
+	font-style: normal;
+}
+.firstblock__wrapper {
+ /* height: 650px;
+  flex: 1 1 1920px; */
+  background-color:#FED100;
+   }
+.firstblock__container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;  
+  font-family: "Montserrat";
+  color: #333333;
+  }
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  padding:40px 0;
+  }
+.header-menu__logo {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.57px;
+  padding-left: 32px;
+   }
+.header-menu__group1 {
+  display: flex;
+  justify-content: space-between;
+  gap:16px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.94px;
+  }
+ .header-menu__phone-number {
+  white-space: nowrap;
+  border-bottom: 1px solid #333333;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+    }
+.content {
+  display: flex;
+}
+.content-column {
+  flex: 1 1 50%;
+}
+.content-column:last-child {
+  display: flex;
+  justify-content: center;
+}
+.content-title{
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 88.83px;
+}
+.content-subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36.57px;
+}
+.content-button {
+  width: 200px;
+  padding: 16px 0;
+  text-align:center;
+  border: 1px solid #000;
+  margin: 0 0 100px 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.26px;
+}
+.content-advantages {
+  display: flex;
+}
+.content-advantage {
+  display: flex;
+  align-items: center;
+  }
+.advantage-text {
+  max-width: 160px;
+  margin: 0 0 0 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.02px;
+}
+.advantage-image {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+}
+.advantage-image img {
+  width: 100%;
+  height: 100%;
+}
+.content-image{
+  max-width: 553px;
+  max-height: 629px;
+}
+.content-image img{
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+    .content {
+      display: block;
+    }
+  }
+  @media (max-width: 600px) {
+    .content-advantages {
+      display: block;
+    }
+    .content-advantage {
+      display: flex;
+      align-items: center;
+      margin: 0 0 32px 0;
+    }
+  }
+  @media (max-width: 500px) {
+    .header-menu__group1 {
+      display: none;
+    }     
+  }
+   
